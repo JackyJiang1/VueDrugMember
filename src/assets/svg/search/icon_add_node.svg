@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        fill: #376def;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Mask" class="cls-1" d="M15.767,7.4h-6.8V.769A.769.769,0,0,0,8.193,0h0a.769.769,0,0,0-.769.769V7.4H.769A.769.769,0,0,0,0,8.172H0a.769.769,0,0,0,.769.769H7.424V15.6a.769.769,0,0,0,.769.769h0a.769.769,0,0,0,.769-.769V8.941h6.8a.769.769,0,0,0,.769-.769h0A.769.769,0,0,0,15.767,7.4Z"/>
+    </clipPath>
+  </defs>
+  <g id="组_2183" data-name="组 2183" transform="translate(-114.908 -335.908)">
+    <circle id="椭圆_84" data-name="椭圆 84" class="cls-2" cx="15" cy="15" r="15" transform="translate(114.908 335.908)"/>
+    <g id="Icon_Plus" data-name="Icon/Plus" transform="translate(121.69 342.709)">
+      <path id="Mask-2" data-name="Mask" class="cls-1" d="M15.767,7.4h-6.8V.769A.769.769,0,0,0,8.193,0h0a.769.769,0,0,0-.769.769V7.4H.769A.769.769,0,0,0,0,8.172H0a.769.769,0,0,0,.769.769H7.424V15.6a.769.769,0,0,0,.769.769h0a.769.769,0,0,0,.769-.769V8.941h6.8a.769.769,0,0,0,.769-.769h0A.769.769,0,0,0,15.767,7.4Z"/>
+    </g>
+  </g>
+</svg>

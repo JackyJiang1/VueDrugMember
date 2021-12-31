@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="45" viewBox="0 0 29 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#pattern);
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 40 63">
+      <image width="40" height="63" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA/CAYAAACSLYpOAAAAAXNSR0IArs4c6QAABZ5JREFUaAXtWt1rHFUUP/v9kd1kN9mkyWZbaGLaJLSpokkrVvGhkgfBF18sIn3uiwj64IMQRfokSMV/QARFRBHBRxF88K1IFSHUbbdom2i0NR9Nstmd/fD8zmTa7cyd3dmZtAaZQ7Ize+feM7/7O+fce8+9GyiXy03axxLcx9gE2r4HGN4LBsPBAIWDQWo2m9Rgh+GvFAgEqNZo8L83D/IEMMggAG7xnzv0/dIturK2SZtajdLRCE1nU/TsaI4mMimqMlDG7koCboME4Cr1Ol386Rp9XlymjaomrDF5BCxgMxuL0iuTBTp/7LB0xA2Znhi8cOlX+uTKDUqEQ/Jvpmi7VqOLl0u0U2vQm49PsPm7p9FVkETY3y7/vUZflf6gZCTMPgferIJygP+suESLq5vCorVW+xJXAEPsd1fXt5iZOqmh3XspAgZ+eX1ji8I2HblX23rnCiBMNdITJzDZSWDUWChIw8k41bu3MHV+gwKBVm/Q3IEsnc7305ZWV9TQi4Bnm5+fOThIMwO9MuzYVrZ54CpIDFYunJrmyF2UIQashgJBMXmT4xjjH8bGFw4P08LspPhp3UWQOB5m4Esh9iE4PgZhEb42eYz77uYt+vbGX3SN/QyM9XDgPNLXQ/OHhuiZ/ABGbWrsjjHoHDqADjkZdjoCxEAMYGsVjX67U6aV7R1a5Xu8CE7PfwIIgBE0kDj7HEAimMAk/Aj3EPhjip8NJWKUiUUEqNYGaVsTQ1mJo/XT4k02421a3trhwbnBzt7QR2MA5Jfu8ilg9RLBIt9xZzzHPSwQZb0A+ORwP700MUrT/Wmqsl502iy2DEbZf74sLdN7PxaZtYpELFhofZlZmZPvAoI/4I8auwdYfHVmjM5NHVLO20qA6OE31/+kN374RfwEZn5QAqD4f/fkFJ2dKMi83fouyzADE8DfPvy5JA0fJDgAgX+j+x8t/k4bmj6ftwWIygiClXKFg8CCv7Xtnt1LEPJiY5vnbLOtbIPEXBG+gxUKBCy7FWPBYNYBjSqttgDNACLsh+lIhB27KXOr+bnT7wgKyEa15qiJIxsi2o5m0vT186fonZOT4puOtLdUAvdg7f3Tx+mDp2dkVNg1SEst660jBqE8ygwOJWOyCLWqcV4yEI/eDQwnrRwBhCLDBw0fcqJcVQftVb6mqosyRya2a/wwyn2AXln2GfQZ9MqA1/b/Px/UlwteeXHeXsmgPmvcrwQzgDHlYXnkRdT69dnKrNcCEI1TvF2RioSowosEAEMekuU5FFJIJe4mO1LQ5Qf0ZXlFk4wE79OfiYUpwSt5s1hKoCCXiNLC3BQd42QGO1RnCoP02olx2ULDisSOP7RF8oOrnWB34QDvSrzNS3wk89D/aK6P3uLcOR0NW9oqFwtIFZ/j3YCnRvplGT7ASpAwtUu8AQqZ2hjnw0XeJ7y9U7Vd2CJHnj+o58zrvHrvY0YToZAlH0EnLQwaPcemIxapuXhMijrtlII5JOkfz8/SE0MZWdgaulRX6EdeneNO4YrvKlEyaFTUndneXEY94yo1mUmnLZzot2XQeOl/ffUBerWAz6DPoFcGvLb3fdBn0CsDXtv7Pugz6JUBr+19H3zoDCLjVK2Y9dUxw9nNqFR1kLeoytt1oisTY5e/j38wcYR/KFHmczkBxdrrnATh/niuVxCe4CytzjkGkiyjDuqPcsqa74m1Tb7MYNvmJObKeBkSqYW5o5KxXVpZJY1BDPLe9Vk+c3txPE9VPox5+UiB1vnc44ury3Lmgjaz+Ry9/ti4JGHYlHcqyqOwTo1x+oQsDweNZc7mRpiVET5RNw4E4QY461viw0ec8+F3C2O9SdnZ7wYccLgCKA35Qz9c1PNlVbKOLRIk+jC04QZo2410ZeJWxTC3nivjTi3GQaH6qbPSroLEmcq9rfUv1VoyJA1Vpt0AAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <rect id="图像_11" data-name="图像 11" class="cls-1" width="29" height="45"/>
+</svg>

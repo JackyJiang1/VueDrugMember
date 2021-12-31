@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #666;
+      }
+    </style>
+  </defs>
+  <g id="Group_64" data-name="Group 64" transform="translate(20) rotate(90)">
+    <rect id="Rectangle_36_Copy_5" data-name="Rectangle 36 Copy 5" class="cls-1" width="20" height="20" transform="translate(0 0)"/>
+    <g id="right" transform="translate(5.065 2.482)">
+      <path id="Shape" class="cls-2" d="M.846,0a.848.848,0,0,1,.53.188l8.2,6.68a.863.863,0,0,1,0,1.334L1.411,14.846a.838.838,0,0,1-1.188-.131.863.863,0,0,1,.13-1.2L7.7,7.534.316,1.522a.863.863,0,0,1-.13-1.2A.843.843,0,0,1,.846,0Z" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>

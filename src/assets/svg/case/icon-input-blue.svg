@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #376def;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_2653" data-name="组 2653" transform="translate(-670 -312)">
+    <g id="组_2651" data-name="组 2651" transform="translate(90)">
+      <g id="矩形_1422" data-name="矩形 1422" class="cls-1" transform="translate(580 312)">
+        <rect class="cls-3" width="16" height="16" rx="3"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="15" height="15" rx="2.5"/>
+      </g>
+      <line id="直线_34" data-name="直线 34" class="cls-2" x2="7" transform="translate(584.5 315)"/>
+      <line id="直线_35" data-name="直线 35" class="cls-2" x2="7" transform="translate(584.5 317)"/>
+      <line id="直线_529" data-name="直线 529" class="cls-2" x2="5.608" transform="translate(585.892 322.5)"/>
+      <line id="直线_530" data-name="直线 530" class="cls-2" x1="1.975" y2="2" transform="translate(584.892 320.5)"/>
+      <line id="直线_531" data-name="直线 531" class="cls-2" x1="1.975" y1="2" transform="translate(584.892 322.5)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg id="plus-circle" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #28bf7e;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-1" width="20" height="20"/>
+  <path id="Shape" class="cls-2" d="M10,20A10,10,0,0,1,2.929,2.929,10,10,0,0,1,17.071,17.071,9.935,9.935,0,0,1,10,20ZM5.7,9.307a.7.7,0,0,0,0,1.406h3.6v3.564a.7.7,0,1,0,1.406,0V10.713H14.3a.7.7,0,1,0,0-1.406H10.713V5.722a.7.7,0,0,0-1.406,0V9.307Z" transform="translate(0 0)"/>
+</svg>

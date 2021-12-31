@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009899;
+      }
+    </style>
+  </defs>
+  <path id="icon_date" class="cls-1" d="M14,14H0V1H3V0H4V1h6V0h1V1h3V14h0ZM1,13H13V5H1ZM1,4H13V2H11V3H10V2H4V3H3V2H1Zm8,7V10h2v1ZM6,11V10H8v1ZM3,11V10H5v1ZM9,8V7h2V8ZM6,8V7H8V8ZM3,8V7H5V8Z"/>
+</svg>

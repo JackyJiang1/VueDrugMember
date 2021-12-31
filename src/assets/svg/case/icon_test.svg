@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #1952dd;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        fill: #1952dd;
+        opacity: 0.23;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_2685" data-name="组 2685" transform="translate(-43 -1352)">
+    <g id="组_2681" data-name="组 2681">
+      <g id="矩形_1358" data-name="矩形 1358" class="cls-1" transform="translate(43 1352)">
+        <rect class="cls-4" width="21" height="19" rx="4"/>
+        <rect class="cls-5" x="0.5" y="0.5" width="20" height="18" rx="3.5"/>
+      </g>
+      <path id="路径_906" data-name="路径 906" class="cls-2" d="M2775.635,1357.335h13.755" transform="translate(-2729.135 0.165)"/>
+      <path id="路径_907" data-name="路径 907" class="cls-2" d="M2775.635,1357.335h13.755" transform="translate(-2729.135 4.165)"/>
+      <path id="路径_908" data-name="路径 908" class="cls-2" d="M2775.635,1357.335h13.755" transform="translate(-2729.135 8.165)"/>
+      <g id="椭圆_143" data-name="椭圆 143" class="cls-1" transform="translate(52 1356)">
+        <circle class="cls-4" cx="1.5" cy="1.5" r="1.5"/>
+        <circle class="cls-5" cx="1.5" cy="1.5" r="1"/>
+      </g>
+      <g id="椭圆_144" data-name="椭圆 144" class="cls-1" transform="translate(48 1360)">
+        <circle class="cls-4" cx="1.5" cy="1.5" r="1.5"/>
+        <circle class="cls-5" cx="1.5" cy="1.5" r="1"/>
+      </g>
+      <g id="椭圆_145" data-name="椭圆 145" class="cls-1" transform="translate(56 1364)">
+        <circle class="cls-4" cx="1.5" cy="1.5" r="1.5"/>
+        <circle class="cls-5" cx="1.5" cy="1.5" r="1"/>
+      </g>
+    </g>
+    <rect id="矩形_1359" data-name="矩形 1359" class="cls-3" width="16" height="14" rx="3" transform="translate(47 1356)"/>
+  </g>
+</svg>

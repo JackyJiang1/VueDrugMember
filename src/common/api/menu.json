@@ -1,0 +1,550 @@
+{
+    "menu": {
+        "menuList": [
+            {
+                "icon": "el-icon-tickets",
+                "index": "index",
+                "title": "系统首页",
+                "subs": [
+                    {
+                        "icon": "",
+                        "index": "index",
+                        "title": "系统首页",
+                        "subs": []
+                    },
+                    {
+                        "icon": "",
+                        "index": "msg",
+                        "title": "建议留言",
+                        "subs": []
+                    }
+                ]
+            },
+            {
+                "icon": "el-icon-view",
+                "index": "2",
+                "title": "基础模块",
+                "subs": [
+                    {
+                        "icon": "0",
+                        "index": "searchinput",
+                        "title": "查询输入页",
+                        "subs": []
+                    },
+                    {
+                        "icon": "0",
+                        "index": "tabpage",
+                        "title": "标签选项卡",
+                        "subs": []
+                    },
+                    {
+                        "icon": "",
+                        "index": "tablepage",
+                        "title": "综合表单页",
+                        "subs": []
+                    },
+                    {
+                        "icon": "",
+                        "index": "formpage",
+                        "title": "表单页",
+                        "subs": []
+                    },
+                    {
+                        "icon": "",
+                        "index": "treepage",
+                        "title": "树组件页",
+                        "subs": []
+                    },
+                    {
+                        "icon": "",
+                        "index": "messageboard",
+                        "title": "增删改查",
+                        "subs": []
+                    }
+                ]
+            },
+            {
+                "icon": "el-icon-setting",
+                "index": "3",
+                "title": "系统管理",
+                "subs": [
+                    {
+                        "icon": "0",
+                        "index": "organizationTree",
+                        "title": "机构管理",
+                        "subs": []
+                    },
+                    {
+                        "icon": "0",
+                        "index": "sysUser",
+                        "title": "用户管理",
+                        "subs": []
+                    },
+                    {
+                        "icon": "0",
+                        "index": "sysRole",
+                        "title": "角色管理",
+                        "subs": []
+                    },
+                    {
+                        "icon": "0",
+                        "index": "sysResource",
+                        "title": "资源管理",
+                        "subs": []
+                    },
+                    {
+                        "icon": "0",
+                        "index": "sysMenu",
+                        "title": "菜单管理",
+                        "subs": []
+                    },
+                    {
+                        "icon": "0",
+                        "index": "sysAcl",
+                        "title": "角色资源授权",
+                        "subs": []
+                    }
+                ]
+            },
+            {
+                "icon": "el-icon-tickets",
+                "index": "404",
+                "title": "404错误页",
+                "subs": [
+                    {
+                        "icon": "",
+                        "index": "404",
+                        "title": "404错误页",
+                        "subs": []
+                    }
+                ]
+            }
+        ]
+    },
+    "route": {
+        "rootRoute": [
+            {
+                "path": "/",
+                "meta": {
+                    "title": "自述文件"
+                },
+                "children": [
+                    {
+                        "name": "index",
+                        "path": "/index",
+                        "meta": {
+                            "title": "系统首页"
+                        }
+                    },
+                    {
+                        "name": "index",
+                        "path": "/index",
+                        "meta": {
+                            "title": "系统首页"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "msg",
+                        "path": "/msg",
+                        "meta": {
+                            "title": "建议留言"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "searchinput",
+                        "path": "/searchinput",
+                        "meta": {
+                            "title": "查询输入页"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "tabpage",
+                        "path": "/tabpage",
+                        "meta": {
+                            "title": "标签选项卡"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "tablepage",
+                        "path": "/tablepage",
+                        "meta": {
+                            "title": "综合表单页"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "formpage",
+                        "path": "/formpage",
+                        "meta": {
+                            "title": "表单页"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "treepage",
+                        "path": "/treepage",
+                        "meta": {
+                            "title": "树组件页"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "messageboard",
+                        "path": "/messageboard",
+                        "meta": {
+                            "title": "增删改查"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "organizationTree",
+                        "path": "/organizationTree",
+                        "meta": {
+                            "title": "机构管理"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "sysUser",
+                        "path": "/sysUser",
+                        "meta": {
+                            "title": "用户管理"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "sysRole",
+                        "path": "/sysRole",
+                        "meta": {
+                            "title": "角色管理"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "sysResource",
+                        "path": "/sysResource",
+                        "meta": {
+                            "title": "资源管理"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "sysMenu",
+                        "path": "/sysMenu",
+                        "meta": {
+                            "title": "菜单管理"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "sysAcl",
+                        "path": "/sysAcl",
+                        "meta": {
+                            "title": "角色资源授权"
+                        },
+                        "children": []
+                    },
+                    {
+                        "name": "404",
+                        "path": "/404",
+                        "meta": {
+                            "title": "404错误页"
+                        },
+                        "children": [
+                            {
+                                "name": "404",
+                                "path": "/404",
+                                "meta": {
+                                    "title": "404错误页"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "routeParam": [
+            {
+                "id": 1,
+                "menuCode": null,
+                "menuName": "系统首页",
+                "menuIcon": "el-icon-tickets",
+                "menuUrl": null,
+                "parentId": "0",
+                "orderBy": "1",
+                "isShow": 1,
+                "resoure_url": "index",
+                "resoure_type": "module",
+                "permission": "index",
+                "sysMenuVoChild": [
+                    {
+                        "id": 24,
+                        "menuCode": null,
+                        "menuName": "系统首页",
+                        "menuIcon": "",
+                        "menuUrl": null,
+                        "parentId": "1",
+                        "orderBy": "1",
+                        "isShow": 1,
+                        "resoure_url": "",
+                        "resoure_type": "url",
+                        "permission": "index",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 26,
+                        "menuCode": null,
+                        "menuName": "建议留言",
+                        "menuIcon": "",
+                        "menuUrl": null,
+                        "parentId": "1",
+                        "orderBy": "2",
+                        "isShow": 1,
+                        "resoure_url": "",
+                        "resoure_type": "url",
+                        "permission": "msg",
+                        "sysMenuVoChild": []
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "menuCode": null,
+                "menuName": "基础模块",
+                "menuIcon": "el-icon-view",
+                "menuUrl": null,
+                "parentId": "0",
+                "orderBy": "2",
+                "isShow": 1,
+                "resoure_url": null,
+                "resoure_type": "module",
+                "permission": "2",
+                "sysMenuVoChild": [
+                    {
+                        "id": 6,
+                        "menuCode": null,
+                        "menuName": "查询输入页",
+                        "menuIcon": "0",
+                        "menuUrl": null,
+                        "parentId": "2",
+                        "orderBy": "1",
+                        "isShow": 1,
+                        "resoure_url": "WorkPiece/index",
+                        "resoure_type": "url",
+                        "permission": "searchinput",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 7,
+                        "menuCode": null,
+                        "menuName": "标签选项卡",
+                        "menuIcon": "0",
+                        "menuUrl": null,
+                        "parentId": "2",
+                        "orderBy": "2",
+                        "isShow": 1,
+                        "resoure_url": "FlowMonitor/index",
+                        "resoure_type": "url",
+                        "permission": "tabpage",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 19,
+                        "menuCode": null,
+                        "menuName": "综合表单页",
+                        "menuIcon": "",
+                        "menuUrl": null,
+                        "parentId": "2",
+                        "orderBy": "3",
+                        "isShow": 1,
+                        "resoure_url": "PriceDetail/index",
+                        "resoure_type": "url",
+                        "permission": "tablepage",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 22,
+                        "menuCode": null,
+                        "menuName": "表单页",
+                        "menuIcon": "",
+                        "menuUrl": null,
+                        "parentId": "2",
+                        "orderBy": "4",
+                        "isShow": 1,
+                        "resoure_url": "",
+                        "resoure_type": "url",
+                        "permission": "formpage",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 23,
+                        "menuCode": null,
+                        "menuName": "树组件页",
+                        "menuIcon": "",
+                        "menuUrl": null,
+                        "parentId": "2",
+                        "orderBy": "5",
+                        "isShow": 1,
+                        "resoure_url": "",
+                        "resoure_type": "url",
+                        "permission": "treepage",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 27,
+                        "menuCode": null,
+                        "menuName": "增删改查",
+                        "menuIcon": "",
+                        "menuUrl": null,
+                        "parentId": "2",
+                        "orderBy": "1",
+                        "isShow": 1,
+                        "resoure_url": "",
+                        "resoure_type": "url",
+                        "permission": "messageboard",
+                        "sysMenuVoChild": []
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "menuCode": null,
+                "menuName": "系统管理",
+                "menuIcon": "el-icon-setting",
+                "menuUrl": null,
+                "parentId": "0",
+                "orderBy": "3",
+                "isShow": 1,
+                "resoure_url": null,
+                "resoure_type": "module",
+                "permission": "3",
+                "sysMenuVoChild": [
+                    {
+                        "id": 8,
+                        "menuCode": null,
+                        "menuName": "机构管理",
+                        "menuIcon": "0",
+                        "menuUrl": null,
+                        "parentId": "3",
+                        "orderBy": "1",
+                        "isShow": 1,
+                        "resoure_url": "Admin/OrganizationTree",
+                        "resoure_type": "url",
+                        "permission": "organizationTree",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 9,
+                        "menuCode": null,
+                        "menuName": "用户管理",
+                        "menuIcon": "0",
+                        "menuUrl": null,
+                        "parentId": "3",
+                        "orderBy": "2",
+                        "isShow": 1,
+                        "resoure_url": "Admin/SysUser",
+                        "resoure_type": "url",
+                        "permission": "sysUser",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 11,
+                        "menuCode": null,
+                        "menuName": "角色管理",
+                        "menuIcon": "0",
+                        "menuUrl": null,
+                        "parentId": "3",
+                        "orderBy": "4",
+                        "isShow": 1,
+                        "resoure_url": "Admin/SysRole",
+                        "resoure_type": "url",
+                        "permission": "sysRole",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 12,
+                        "menuCode": null,
+                        "menuName": "资源管理",
+                        "menuIcon": "0",
+                        "menuUrl": null,
+                        "parentId": "3",
+                        "orderBy": "5",
+                        "isShow": 1,
+                        "resoure_url": "Admin/SysResource",
+                        "resoure_type": "url",
+                        "permission": "sysResource",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 14,
+                        "menuCode": null,
+                        "menuName": "菜单管理",
+                        "menuIcon": "0",
+                        "menuUrl": null,
+                        "parentId": "3",
+                        "orderBy": "7",
+                        "isShow": 1,
+                        "resoure_url": "Admin/SysMenu",
+                        "resoure_type": "url",
+                        "permission": "sysMenu",
+                        "sysMenuVoChild": []
+                    },
+                    {
+                        "id": 15,
+                        "menuCode": null,
+                        "menuName": "角色资源授权",
+                        "menuIcon": "0",
+                        "menuUrl": null,
+                        "parentId": "3",
+                        "orderBy": "8",
+                        "isShow": 1,
+                        "resoure_url": "Admin/SysAcl",
+                        "resoure_type": "url",
+                        "permission": "sysAcl",
+                        "sysMenuVoChild": []
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "menuCode": null,
+                "menuName": "404错误页",
+                "menuIcon": "el-icon-tickets",
+                "menuUrl": null,
+                "parentId": "0",
+                "orderBy": "4",
+                "isShow": 1,
+                "resoure_url": "404",
+                "resoure_type": "url",
+                "permission": "404",
+                "sysMenuVoChild": [
+                    {
+                        "id": 25,
+                        "menuCode": null,
+                        "menuName": "404错误页",
+                        "menuIcon": "",
+                        "menuUrl": null,
+                        "parentId": "4",
+                        "orderBy": "1",
+                        "isShow": 1,
+                        "resoure_url": "404",
+                        "resoure_type": "url",
+                        "permission": "404",
+                        "sysMenuVoChild": []
+                    }
+                ]
+            }
+        ]
+    },
+    "permission": {
+        "btnPermissions": [
+            "liuyan_select",
+            "liuyan_add"
+        ]
+    }
+}

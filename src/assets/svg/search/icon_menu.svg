@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+      }
+    </style>
+  </defs>
+  <g id="项目" transform="translate(0)">
+    <path id="路径_6" data-name="路径 6" class="cls-1" d="M218.724,141.04H231.85v2.307H218.724Z" transform="translate(-213.85 -140.583)"/>
+    <path id="路径_7" data-name="路径 7" class="cls-1" d="M218.724,455.647H231.85v2.307H218.724Z" transform="translate(-213.85 -448.656)"/>
+    <path id="路径_8" data-name="路径 8" class="cls-1" d="M218.724,734.51H231.85v2.884H218.724Z" transform="translate(-213.85 -721.715)"/>
+    <path id="路径_9" data-name="路径 9" class="cls-1" d="M.642,119.922h0a1.563,1.563,0,1,0,3.126,0h0a1.563,1.563,0,1,0-3.126,0Z" transform="translate(-0.642 -118.359)"/>
+    <path id="路径_10" data-name="路径 10" class="cls-1" d="M.642,429.925h0a1.563,1.563,0,1,0,3.126,0h0a1.563,1.563,0,1,0-3.126,0Z" transform="translate(-0.642 -421.925)"/>
+    <path id="路径_11" data-name="路径 11" class="cls-1" d="M.642,739.959h0a1.563,1.563,0,1,0,3.126,0h0a1.563,1.563,0,1,0-3.126,0Z" transform="translate(-0.642 -725.522)"/>
+  </g>
+</svg>

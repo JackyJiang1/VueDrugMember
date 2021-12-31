@@ -1,0 +1,17 @@
+<svg id="Group_56" data-name="Group 56" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #FF4D4F;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_36_Copy" data-name="Rectangle 36 Copy" class="cls-1" width="20" height="20"/>
+  <g id="close" transform="translate(2.452 2.456)">
+    <path id="Shape" class="cls-2" d="M6.089,5.188l4.107-4.1a.634.634,0,1,0-.9-.9L5.191,4.29,1.082.186a.634.634,0,0,0-.9.9l4.107,4.1L.186,9.292a.634.634,0,0,0,.9.9l4.109-4.1L9.3,10.19a.634.634,0,1,0,.9-.9Z" transform="translate(2.357 2.355)"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="29" viewBox="0 0 27 29">
+  <g id="组_3723" data-name="组 3723" transform="translate(-1208 -179)">
+    <ellipse id="椭圆_86" data-name="椭圆 86" cx="13.5" cy="4" rx="13.5" ry="4" transform="translate(1208 200)" fill="#376def" opacity="0.098"/>
+    <g id="组_3722" data-name="组 3722" transform="translate(9 -7)">
+      <g id="矩形_1576" data-name="矩形 1576" transform="translate(1202 186)" fill="none" stroke="#376def" stroke-width="1">
+        <rect width="20" height="25" rx="4" stroke="none"/>
+        <rect x="0.5" y="0.5" width="19" height="24" rx="3.5" fill="none"/>
+      </g>
+      <line id="直线_401" data-name="直线 401" x2="9" transform="translate(1207.5 197.5)" fill="none" stroke="#376def" stroke-linecap="round" stroke-width="1"/>
+      <g id="组_3721" data-name="组 3721" transform="translate(-0.5 1)">
+        <line id="直线_404" data-name="直线 404" x2="4" transform="translate(1210.5 191.5)" fill="none" stroke="#376def" stroke-linecap="round" stroke-width="1"/>
+        <line id="直线_405" data-name="直线 405" x2="4" transform="translate(1212.5 189.5) rotate(90)" fill="none" stroke="#376def" stroke-linecap="round" stroke-width="1"/>
+      </g>
+      <line id="直线_402" data-name="直线 402" x2="9" transform="translate(1207.5 201.5)" fill="none" stroke="#376def" stroke-linecap="round" stroke-width="1"/>
+      <line id="直线_403" data-name="直线 403" x2="9" transform="translate(1207.5 205.5)" fill="none" stroke="#376def" stroke-linecap="round" stroke-width="1"/>
+    </g>
+    <rect id="矩形_1577" data-name="矩形 1577" width="17" height="22" rx="3" transform="translate(1213 181)" fill="#376def" opacity="0.099"/>
+  </g>
+</svg>

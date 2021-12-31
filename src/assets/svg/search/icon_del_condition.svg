@@ -1,0 +1,10 @@
+<svg id="group" data-name="group" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="circle" data-name="circle" fill="#fff" stroke="#f12c20" stroke-width="1">
+    <circle cx="8" cy="8" r="8" stroke="none"/>
+    <circle cx="8" cy="8" r="7.5" fill="none"/>
+  </g>
+  <g id="rect" data-name="rect" transform="translate(4 7)" fill="#fff" stroke="#f12c20" stroke-width="1">
+    <rect width="8" height="2" stroke="none"/>
+    <rect x="0.5" y="0.5" width="7" height="1" fill="none"/>
+  </g>
+</svg>

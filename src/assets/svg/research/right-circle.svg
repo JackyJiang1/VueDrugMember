@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+      }
+    </style>
+  </defs>
+  <g id="right-circle" transform="translate(12.012 12.023) rotate(180)">
+    <path id="Shape" class="cls-1" d="M6,12A6,6,0,0,1,1.757,1.757a6,6,0,0,1,8.486,8.486A5.961,5.961,0,0,1,6,12ZM4.935,2.976a.422.422,0,0,0-.289.729L7.08,5.988,4.645,8.27a.422.422,0,0,0,.577.615L7.986,6.3a.422.422,0,0,0,0-.615L5.224,3.09A.421.421,0,0,0,4.935,2.976Z" transform="translate(0.012 0.023)"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_1357" data-name="矩形 1357" width="14" height="14" transform="translate(-16793 -15406)" fill="#376def" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="附件上传" transform="translate(16793 15406)" clip-path="url(#clip-path)">
+    <path id="附件_1_" data-name="附件 (1)" d="M14.629,16.663H2.379a.941.941,0,0,1-.875-1V3.659a.941.941,0,0,1,.875-1H6a.812.812,0,0,1,.55.22L8.471,4.65h6.159a.941.941,0,0,1,.875,1V15.664a.94.94,0,0,1-.875,1Zm0-1v0ZM6.081,3.962h-3.5V15.485H14.426l0-9.6H8.474a.793.793,0,0,1-.533-.214s-1.86-1.709-1.86-1.709Z" transform="translate(-16794.504 -15408.663)" fill="#376def"/>
+    <g id="组_2805" data-name="组 2805" transform="translate(0 -1)">
+      <path id="多边形_4" data-name="多边形 4" d="M2.5,0,5,3H0Z" transform="translate(-16788 -15400)" fill="#376def"/>
+      <rect id="矩形_1359" data-name="矩形 1359" width="1" height="3" transform="translate(-16786 -15398)" fill="#376def"/>
+      <rect id="矩形_1360" data-name="矩形 1360" width="1" height="5" transform="translate(-16783 -15394) rotate(90)" fill="#376def"/>
+    </g>
+  </g>
+</svg>

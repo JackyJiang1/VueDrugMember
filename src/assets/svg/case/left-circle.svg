@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="left-circle" transform="translate(-0.012 -0.023)">
+    <path id="Shape" class="cls-1" d="M8,16A8,8,0,0,1,2.343,2.343,8,8,0,0,1,13.657,13.657,7.948,7.948,0,0,1,8,16ZM9.418,3.969a.561.561,0,0,0-.385.153L5.348,7.575a.563.563,0,0,0,0,.82l3.685,3.453a.563.563,0,1,0,.77-.82L6.558,7.984,9.8,4.942a.563.563,0,0,0-.385-.973Z" transform="translate(0.012 0.023)"/>
+  </g>
+</svg>

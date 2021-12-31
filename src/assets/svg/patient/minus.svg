@@ -1,0 +1,10 @@
+<svg id="minus-circle" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff4d4f;
+      }
+    </style>
+  </defs>
+  <path id="Shape" class="cls-1" d="M10,20A10,10,0,0,1,2.929,2.929,10,10,0,0,1,17.071,17.071,9.935,9.935,0,0,1,10,20ZM4.443,9.3a.7.7,0,0,0,0,1.406H15.556a.7.7,0,1,0,0-1.406Z" transform="translate(0 0)"/>
+</svg>

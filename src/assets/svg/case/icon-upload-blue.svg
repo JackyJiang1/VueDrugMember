@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #376def;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_182" data-name="Group 182" transform="translate(-0.072 -0.072)">
+    <g id="upload" transform="translate(1.211 1.211)">
+      <path id="Shape" class="cls-1" d="M12.772,13.721H.951A.952.952,0,0,1,0,12.77V9.356a.529.529,0,1,1,1.058,0v2.994a.315.315,0,0,0,.315.315H12.347a.316.316,0,0,0,.316-.315V9.357a.53.53,0,0,1,1.06,0V12.77A.952.952,0,0,1,12.772,13.721ZM6.877,10.028a.531.531,0,0,1-.53-.53V2.807L4.863,4.291a.527.527,0,0,1-.747,0,.532.532,0,0,1,0-.749L6.5,1.155A.527.527,0,0,1,6.877,1a.533.533,0,0,1,.375.155L9.638,3.542a.529.529,0,1,1-.747.749L7.407,2.807V9.5A.531.531,0,0,1,6.877,10.028Z" transform="translate(0 0)"/>
+    </g>
+    <rect id="Rectangle_49" data-name="Rectangle 49" class="cls-2" width="16" height="16" transform="translate(0.072 0.072)"/>
+  </g>
+</svg>

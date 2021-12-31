@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.207" height="11.207" viewBox="0 0 11.207 11.207">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #376def;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="组_4784" data-name="组 4784" transform="translate(-392 -115.793)">
+    <line id="直线_564" data-name="直线 564" class="cls-1" y1="3" x2="1" transform="translate(394.5 121.5)"/>
+    <line id="直线_567" data-name="直线 567" class="cls-1" y1="5" x2="5" transform="translate(395.5 116.5)"/>
+    <line id="直线_568" data-name="直线 568" class="cls-1" y1="5" x2="5" transform="translate(397.5 118.5)"/>
+    <line id="直线_566" data-name="直线 566" class="cls-1" y1="1" x2="3" transform="translate(394.5 123.5)"/>
+    <line id="直线_569" data-name="直线 569" class="cls-1" x2="2" y2="2" transform="translate(400.5 116.5)"/>
+    <line id="直线_565" data-name="直线 565" class="cls-1" x2="8" transform="translate(392.5 126.5)"/>
+  </g>
+</svg>

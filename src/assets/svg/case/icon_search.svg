@@ -1,0 +1,17 @@
+<svg id="Group_160" data-name="Group 160" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #009899;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_45_Copy_25" data-name="Rectangle 45 Copy 25" class="cls-1" width="15" height="15"/>
+  <g id="search" transform="translate(0.846 0.846)">
+    <path id="Shape" class="cls-2" d="M12.479,13a.521.521,0,0,1-.37-.152L9.125,9.863a5.57,5.57,0,1,1,.738-.738l2.985,2.983a.522.522,0,0,1-.369.892ZM5.572,1.045a4.528,4.528,0,0,0-1.761,8.7A4.528,4.528,0,0,0,7.333,1.4,4.487,4.487,0,0,0,5.572,1.045Z" transform="translate(0.154 0.154)"/>
+  </g>
+</svg>

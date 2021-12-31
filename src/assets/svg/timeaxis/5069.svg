@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.69;
+      }
+
+      .cls-2, .cls-3, .cls-7 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-4 {
+        fill: #f06f58;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        opacity: 0.285;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_5069" data-name="组 5069" class="cls-1" transform="translate(-964 -290)">
+    <g id="组_5066" data-name="组 5066">
+      <g id="矩形_2223" data-name="矩形 2223" class="cls-2" transform="translate(964 290)">
+        <rect class="cls-6" width="20" height="20" rx="2"/>
+        <rect class="cls-7" x="0.5" y="0.5" width="19" height="19" rx="1.5"/>
+      </g>
+      <line id="直线_718" data-name="直线 718" class="cls-3" x2="11" transform="translate(968.5 295.5)"/>
+      <line id="直线_719" data-name="直线 719" class="cls-3" x2="11" transform="translate(968.5 298.5)"/>
+      <line id="直线_720" data-name="直线 720" class="cls-3" x2="11" transform="translate(968.5 301.5)"/>
+      <line id="直线_721" data-name="直线 721" class="cls-3" x2="11" transform="translate(968.5 304.5)"/>
+    </g>
+    <g id="组_5068" data-name="组 5068">
+      <g id="椭圆_267" data-name="椭圆 267" class="cls-4" transform="translate(977 298)">
+        <circle class="cls-6" cx="6" cy="6" r="6"/>
+        <circle class="cls-7" cx="6" cy="6" r="5.5"/>
+      </g>
+      <circle id="椭圆_268" data-name="椭圆 268" class="cls-5" cx="6" cy="6" r="6" transform="translate(977 298)"/>
+      <g id="组_5067" data-name="组 5067" transform="translate(502.167 -606.046) rotate(45)">
+        <line id="直线_722" data-name="直线 722" class="cls-3" x2="4" transform="translate(981.5 303.5)"/>
+        <line id="直线_723" data-name="直线 723" class="cls-3" x2="4" transform="translate(983.5 301.5) rotate(90)"/>
+      </g>
+    </g>
+  </g>
+</svg>

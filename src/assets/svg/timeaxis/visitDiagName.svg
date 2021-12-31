@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="129.742" height="73.531" viewBox="0 0 129.742 73.531">
+  <defs>
+    <style>
+      .cls-1, .cls-10 {
+        fill: #f7f8f8;
+      }
+
+      .cls-1 {
+        opacity: 0.194;
+      }
+
+      .cls-2 {
+        fill: #cdeaea;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #d8efef;
+      }
+
+      .cls-4 {
+        fill: #c7e6e6;
+      }
+
+      .cls-5 {
+        opacity: 0.795;
+      }
+
+      .cls-6 {
+        fill: #b6dddd;
+      }
+
+      .cls-7 {
+        fill: #effcf0;
+      }
+
+      .cls-8 {
+        fill: #d1eded;
+      }
+
+      .cls-9 {
+        fill: #d0eded;
+        opacity: 0.8;
+      }
+
+      .cls-10 {
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <g id="组_6838" data-name="组 6838" transform="translate(-517.517 -612.854)">
+    <path id="路径_3189" data-name="路径 3189" class="cls-1" d="M-20734.389,2737.339c-6.66,2.466-29.551,16.086-9.748,22.963s22.176,3.438,20.588,17.966,53.7,9.7,86.707-12.037.9-30.075-9.021-32.108c-21.881-5.479-24.842-4.719-48.68-4.354A115.1,115.1,0,0,0-20734.389,2737.339Z" transform="translate(21269.549 -2100.196)"/>
+    <g id="组_6836" data-name="组 6836" transform="translate(527.365 612.854)">
+      <path id="路径_3145" data-name="路径 3145" class="cls-2" d="M-6874.9,7203.6l38.492,15.56,36.848-15.561-36.848-14.5Z" transform="translate(6890.974 -7188.308)"/>
+      <path id="路径_3146" data-name="路径 3146" class="cls-3" d="M-6836.365,7228.216v32.932l-37.9-18.912-.615-29.567" transform="translate(6890.965 -7197.37)"/>
+      <path id="路径_3150" data-name="路径 3150" class="cls-4" d="M-6835.468,7212.616l-1.006,29.761-35.774,18.729.005-32.91" transform="translate(6926.893 -7197.349)"/>
+      <path id="路径_3151" data-name="路径 3151" class="cls-5" d="M-6795.226,7245.993l32.646-15.453-12.945-17.928-36.843,15.548Z" transform="translate(6866.937 -7197.347)"/>
+      <path id="路径_3152" data-name="路径 3152" class="cls-6" d="M-6839.48,7222.993l17.232-6.317,15.625,6.256-16.125,6.84Z" transform="translate(6877.358 -7198.91)"/>
+      <path id="路径_3185" data-name="路径 3185" class="cls-7" d="M-20683.725,2763.673v5.449l17.193,8.62v-5.759Z" transform="translate(20708.916 -2732.364)"/>
+      <path id="路径_3186" data-name="路径 3186" class="cls-7" d="M-20674.273,2759.155l5.574,2v18.189l-5.574-2.73Z" transform="translate(20705.285 -2730.627)"/>
+      <path id="路径_3187" data-name="路径 3187" class="cls-8" d="M-20497.994,2659.614l17.566-.8,35.621,12.278-16.35,3.01Z" transform="translate(20552.572 -2658.817)"/>
+      <path id="路径_3188" data-name="路径 3188" class="cls-9" d="M-20533.152,2660.064l-22.879.917-31.77,12.554,16.031,1.081Z" transform="translate(20587.801 -2659.296)"/>
+    </g>
+    <ellipse id="椭圆_408" data-name="椭圆 408" class="cls-10" cx="6.433" cy="4.527" rx="6.433" ry="4.527" transform="translate(525.849 667.801)"/>
+  </g>
+</svg>

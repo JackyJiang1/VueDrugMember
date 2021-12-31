@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #999;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="组_5612" data-name="组 5612" transform="translate(-317 -423)">
+    <g id="椭圆_299" data-name="椭圆 299" class="cls-1" transform="translate(317 423)">
+      <circle class="cls-3" cx="22" cy="22" r="22"/>
+      <circle class="cls-4" cx="22" cy="22" r="21.5"/>
+    </g>
+    <g id="组_5529" data-name="组 5529" transform="translate(-260 5.5)">
+      <g id="矩形_2268" data-name="矩形 2268" class="cls-1" transform="translate(595 434)">
+        <path class="cls-3" d="M2,0H7A2,2,0,0,1,9,2V15a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z"/>
+        <path class="cls-4" d="M2,.5H7A1.5,1.5,0,0,1,8.5,2V14a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,14V2A1.5,1.5,0,0,1,2,.5Z"/>
+      </g>
+      <g id="矩形_2269" data-name="矩形 2269" class="cls-1" transform="translate(603 437)">
+        <path class="cls-3" d="M0,0H5A2,2,0,0,1,7,2V12a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"/>
+        <path class="cls-4" d="M1,.5H5A1.5,1.5,0,0,1,6.5,2v9a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,11V1A.5.5,0,0,1,1,.5Z"/>
+      </g>
+      <g id="矩形_2270" data-name="矩形 2270" class="cls-1" transform="translate(589 437)">
+        <path class="cls-3" d="M2,0H7A0,0,0,0,1,7,0V12a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z"/>
+        <path class="cls-4" d="M2,.5H6a.5.5,0,0,1,.5.5V11a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,11V2A1.5,1.5,0,0,1,2,.5Z"/>
+      </g>
+      <line id="直线_571" data-name="直线 571" class="cls-2" x2="3.611" transform="translate(597.675 438.5)"/>
+      <line id="直线_574" data-name="直线 574" class="cls-2" x2="3.611" transform="translate(597.675 441.5)"/>
+      <line id="直线_577" data-name="直线 577" class="cls-2" x2="1.788" transform="translate(605.5 441.5)"/>
+      <line id="直线_579" data-name="直线 579" class="cls-2" x2="1.788" transform="translate(591.5 441.5)"/>
+      <line id="直线_575" data-name="直线 575" class="cls-2" x2="3.611" transform="translate(597.675 444.5)"/>
+      <line id="直线_576" data-name="直线 576" class="cls-2" x2="1.788" transform="translate(605.5 444.5)"/>
+      <line id="直线_578" data-name="直线 578" class="cls-2" x2="1.788" transform="translate(591.5 444.5)"/>
+      <line id="直线_572" data-name="直线 572" class="cls-2" x2="4" transform="translate(597.5 431.5)"/>
+      <line id="直线_573" data-name="直线 573" class="cls-2" y2="5" transform="translate(599.5 429.5)"/>
+    </g>
+  </g>
+</svg>
