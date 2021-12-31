@@ -4,10 +4,10 @@
       <div>
         <el-form :inline="true" :model="formInline" class="demo-form-inline" ref="formInline">
           <div>
-            <el-form-item label="文章标题" prop="title">
+            <el-form-item label="资讯标题" prop="title">
               <el-input v-model="formInline.title"></el-input>
             </el-form-item>
-            <el-form-item label="文章关键词" prop="keywords">
+            <el-form-item label="资讯关键词" prop="keywords">
               <el-input v-model="formInline.keywords"></el-input>
             </el-form-item>
             <el-form-item>
@@ -28,8 +28,8 @@
       height="60vh"
       border
       style="width: 100%;font-size:12px">
-      <el-table-column prop="title" label="文章标题" width="200"></el-table-column>
-      <el-table-column prop="keywords" label="文章关键词" width="300"></el-table-column>
+      <el-table-column prop="title" label="资讯标题" width="200"></el-table-column>
+      <el-table-column prop="keywords" label="资讯关键词" width="300"></el-table-column>
       <el-table-column prop="createdby" label="创建人"></el-table-column>
       <el-table-column prop="createddate" label="创建日期" width="200" :formatter="dateFormat"></el-table-column>
       <el-table-column
@@ -59,12 +59,12 @@
       <div>
         <el-form :inline="true" :model="formInline2" class="demo-form-inline" label-width="120px">
           <div>
-            <el-form-item label="文章标题">
+            <el-form-item label="资讯标题">
               <el-input v-model="formInline2.title" :disabled="showFlag"></el-input>
             </el-form-item>
           </div>
           <div>
-            <el-form-item label="文章关键词">
+            <el-form-item label="资讯关键词">
               <el-input v-model="formInline2.keywords" :disabled="showFlag"></el-input>
             </el-form-item>
           </div>
@@ -96,38 +96,6 @@
       <div class="operater mb20 center">
         <el-button type="primary" icon="el-icon-edit" @click="saveEdit" v-if="!showFlag">Save</el-button>
       </div>
-    </el-dialog>
-
-    <el-dialog
-      :title="dialogTitleMA"
-      :visible.sync="dialogVisibleMA"
-      width="70%">
-      <el-table
-      highlight-current-row
-      v-loading="loading"
-      :data="tableDataMA"
-      height="60vh"
-      border
-      style="width: 100%;font-size:12px">
-      <el-table-column prop="mbname" label="店员姓名" width="120"></el-table-column>
-      <el-table-column prop="activity_name" label="名称" width="250"></el-table-column>
-      <el-table-column prop="activestat" label="状态" width="100"></el-table-column>
-      <el-table-column prop="createddate" label="参与时间" width="200" :formatter="datetimeFormat"></el-table-column>
-      <el-table-column prop="flag_favorit" label="喜好标签" width="120"></el-table-column>
-      <el-table-column prop="flag_strength" label="能力标签" width="120"></el-table-column>
-      <el-table-column prop="flag_knowhow" label="认知标签" width="120"></el-table-column>
-      <el-table-column prop="reminder_commu" label="话术提醒" width="120"></el-table-column>
-      <el-table-column prop="reminder_action" label="活动提醒" width="120"></el-table-column>
-    </el-table>
-    <el-pagination
-      class="page"
-      @size-change="handleSizeChangeMA"
-      @current-change="handleCurrentChangeMA"
-      :current-page.sync="currentPageMA"
-      :page-size="pagesizeMA"
-      layout="total,prev, pager, next, jumper"
-      :total="totalMA">
-    </el-pagination>
     </el-dialog>
 
   </div>
@@ -194,17 +162,9 @@ export default {
       },
       formInline2: {},
       tableData: [],
-      RegNo: sessionStorage.getItem('RegNo'),
       loading: false,
       dialogVisible: false,
       dialogTitle: "新增",
-
-      currentPageMA: 1,
-      pagesizeMA: 10,
-      totalMA: 0,
-      tableDataMA: [],
-      dialogVisibleMA: false,
-      dialogTitleMA: "查看活动人数",
 
       content: '',
       editorOption: {} 
@@ -258,7 +218,7 @@ export default {
 
     exportList() {
       let nowDate = new Date().getTime();
-      this.$http.get(`${this.$api.ExportDrugActivityList}?activity_name=${this.formInline.activity_name}&activity_desc=${this.formInline.activity_desc}&regno=${this.RegNo}&page=${this.currentPage}&limit=${this.pagesize}`, {}, {responseType: 'blob'},'Shops' + moment(nowDate).format('YYYY-MM-DD') +'.xlsx')
+      this.$http.get(`${this.$api.ExportDrugArticalList}?title=${this.formInline.title}&keywords=${this.formInline.keywords}&page=${this.currentPage}&limit=${this.pagesize}`, {}, {responseType: 'blob'},'Artical' + moment(nowDate).format('YYYY-MM-DD') +'.xlsx')
       .then(res => {})
       .catch(error => {
         this.$message({type: 'error', showClose: true, message: 'export fail'})
@@ -273,7 +233,7 @@ export default {
         this.currentPage = 1;
       }
       this.loading = true;
-      this.$http.post(`${this.$api.GetDrugActivityList}?activity_name=${this.formInline.activity_name}&activity_desc=${this.formInline.activity_desc}&regno=${this.RegNo}&page=${this.currentPage}&limit=${this.pagesize}&sort=+id`)
+      this.$http.post(`${this.$api.GetDrugArticalList}?title=${this.formInline.title}&keywords=${this.formInline.keywords}&page=${this.currentPage}&limit=${this.pagesize}&sort=+id`)
       .then(res=> {
         this.tableData = res.data;
         this.loading = false;
@@ -331,21 +291,6 @@ export default {
         var date = row[column.property];
         if(date == undefined){return ''};
         return moment(date).format("YYYY-MM-DD HH:MM:SS")
-    },
-    getInfoMA(row, isInit) {
-      if (isInit === 1) {
-        this.currentPageMA = 1;
-      }
-      this.loading = true;
-      this.$http.post(`${this.$api.GetDrugMemberActivityList}?actid=${row.id}&regno=${this.RegNo}&page=${this.currentPageMA}&limit=${this.pagesizeMA}&sort=+createddate`)
-      .then(res=> {
-        this.tableDataMA = res.data;
-        this.loading = false;
-        this.totalMA = res.totalrows
-      })
-      .catch(err=> {
-        console.log(err)
-      })
     },
   }
 }
