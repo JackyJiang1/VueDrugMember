@@ -156,7 +156,6 @@ export default {
       },
       formInline2: {},
       tableData: [],
-      RegNo: sessionStorage.getItem('RegNo'),
       loading: false,
       dialogVisible: false,
       dialogTitle: "新增",
@@ -190,10 +189,8 @@ export default {
       page: `${this.currentPage}`, 
       limit: `${this.pagesize}`, 
       sort: `+id` };
-      //http://172.21.3.18:8010/api/drugMember/GetAllMembers
       //this.$http.post(`${this.$api.GetDrugMemberList}?shopid=${this.formInline.shopid}&mbname=${this.formInline.mbname}&page=${this.currentPage}&limit=${this.pagesize}&sort=+id`)
-      //this.$http.post(`${this.$api.GetDrugMemberList}`, data)
-      this.$http.get(`http://172.21.3.18:8010/api/drugMember/GetAllMembers`, data)
+      this.$http.post(`${this.$api.GetDrugMemberList}`, data)
       .then(res=> {
         this.tableData = res.rows;
         //this.tableData = res;
@@ -220,17 +217,16 @@ export default {
         // this.formInline2 = row;
         // this.dialogVisible = true;
         // this.showFlag = true;
-
         //this.$router.push('店员详情')
         // 带查询参数，变成/backend/order?selected=2
         this.$router.push({path: '店员详情', query: {id: row.id}});
-
       } else if (type == 'delete') {
         this.$confirm('确定删除？','请确认')
         .then(_ => {
-          this.$http.get(`${this.$api.DeleteDrugMember}?id=${row.id}`)
+          let data = { id: `${row.id}`};
+          this.$http.post(`${this.$api.DeleteDrugMember}`, data)
           .then(res=> {
-            res.code == '0' ? this.$message.success(res.msg) : this.$message.error(res.msg)
+            res.code == 0 ? this.$message.success(res.message) : this.$message.error(res.message)
             this.onSubmit();
           })
         })
@@ -259,14 +255,20 @@ export default {
     },
     saveEdit() {
       console.log(this.formInline2)
-      let url = '';
-      url = this.dialogTitle == '新增'? this.$api.AddDrugMember : this.$api.UpdateDrugMember;
-      this.$http.post(url, this.formInline2)
-      .then(res=> {
-        res.code == '0' ? this.$message.success(res.msg) : this.$message.error(res.msg);
-        this.reset();
-        this.dialogVisible= false;
-      })
+      console.log(JSON.stringify(this.formInline2));
+      // let url = '';
+      // url = this.dialogTitle == '新增'? this.$api.AddDrugMember : this.$api.UpdateDrugMember;
+      // this.$http.post(url, this.formInline2)
+      // .then(res=> {
+      //   console.log(res);
+      //   res.code == '0' ? this.$message.success(res.message) : this.$message.error(res.message);
+      //   this.reset();
+      //   this.dialogVisible= false;
+      // })
+      // .catch(err=> {
+      //   console.log(err);
+      //   this.dialogVisible = false;
+      // })
     },
 
 

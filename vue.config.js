@@ -97,8 +97,8 @@ module.exports = {
             '/': { //访问路由
                 //target: 'https://eportal.ttelectronicschina.com', //目标接口域名
                 //target: 'http://localhost:55316',
-                target: 'https://localhost:5001',
-                //target: 'http://172.21.3.18:8010',
+                //target: 'https://localhost:5001',
+                target: 'http://172.21.3.18:8010',
                 //target: 'http://172.21.0.71:8031',
                 secure: true, //https协议才设置
                 ws: true,

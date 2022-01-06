@@ -56,7 +56,7 @@ axios.interceptors.response.use(
         if(response.data.newToken){
             sessionStorage.setItem('token',response.data.newToken)
         }
-        if (response.data.code && (response.data.code == '9001' || response.data.message.indexOf('token')>-1)) {
+        if (response.code && (response.code == '9001' || response.message.indexOf('token')>-1)) {
             router.replace({
                 path: "/login",
                 query: {

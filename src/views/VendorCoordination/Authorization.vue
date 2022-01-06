@@ -67,7 +67,8 @@
         },
         //获取左侧角色列表
         getRoleList(id) {
-          this.$http.get(`${this.$api.GetRole}`)
+          let data = { roleid: id };
+          this.$http.post(`${this.$api.GetRole}`, data)
           .then(res=> {
             if (res.code == '0') {
               this.roleList = res.rows;
@@ -79,7 +80,8 @@
         },
         //获取树状结构
         getTreeData() {
-          this.$http.get(`${this.$api.GetMenuLeaf}`)
+          //let data = { Name: `${this.username}` };
+          this.$http.post(`${this.$api.GetMenuLeaf}`, data)
           .then(res=> {
             if (res.code == '0') {
               this.data = res.rows;

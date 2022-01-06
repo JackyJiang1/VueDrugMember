@@ -101,7 +101,9 @@
       getMenu() {
         //alert("111222");
         //获取菜单
-        this.$http.get(`${this.$api.GetUserMenu}?username=${sessionStorage.getItem('username')}`)
+        let data = { Name: `${sessionStorage.getItem('username')}` };
+        console.log(data);
+        this.$http.post(`${this.$api.GetUserMenu}`, data)
         .then(menu=> {
           console.log(menu);
           if (menu.code == '0') {

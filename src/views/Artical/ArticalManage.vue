@@ -22,7 +22,6 @@
     </div>
     <el-table
       highlight-current-row
-      @row-click="selectCurrent"
       v-loading="loading"
       :data="tableData"
       height="60vh"
@@ -45,8 +44,6 @@
     </el-table>
     <el-pagination
       class="page"
-      @size-change="handleSizeChange"
-      @current-change="handleCurrentChange"
       :current-page.sync="currentPage"
       :page-size="pagesize"
       layout="total,prev, pager, next, jumper"
@@ -69,9 +66,46 @@
             </el-form-item>
           </div>
           <div>
+            <el-form-item label="上传缩略图">
+              <!-- <el-upload
+                class="img-uploader"
+                :action="imgUploaderUrl"
+                list-type="picture-card"
+                :limit="form.limit"
+                ref="upload"
+                multiple
+                :file-list="form.fileList"
+                :on-exceed="handleExceed"
+                :before-upload="beforeUpload"
+                :on-change="handleChange"
+                :on-success="handleSuccess"
+                :http-request="httpRequest"
+                :disabled="isDisabled"
+                :on-error="uploadFailHandle"
+                accept="image/jpeg, image/jpg, image/png, image/bmp">
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+              </el-upload> -->
+              <el-upload
+                class="img-uploader"
+                :action="imgUploaderUrl"
+                name="file"
+                :before-upload="beforeUpload"
+                :on-preview="handlePreview"
+                :on-remove="handleRemove"
+                :file-list="fileList"
+                list-type="picture">
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+              </el-upload>
+            </el-form-item>
+          </div>
+
+          <div class="dvquill">
             <el-form-item label="资讯内容">
               <!-- 富文本组件-->
               <quill-editor
+              class="quill-editor ql-editor"
               v-model="content"
               ref="myQuillEditor"
               :options="editorOption"
@@ -79,15 +113,30 @@
               >
               </quill-editor>
               <!-- 图片上传组件辅助-->
-              <el-upload
+              <!-- <el-upload
               class="avatar-uploader"
-              :action="serverUrl"
-              name="img"
+              :action="quillUploaderUrl"
+              :before-upload="quillBeforeUpload"
+              name="file"
               :headers="header"
               :show-file-list="false"
               :on-success="uploadSuccess"
               :on-error="uploadError"
-              :before-upload="beforeUpload">
+              :file-list="fileList"
+              >
+              </el-upload> -->
+              <!-- <quill-editor ref="myQuillEditor" v-model="content" class="myQuillEditor quill-editor ql-editor" :options="editorOption" /> -->
+              <el-upload
+                class="avatar-uploader"
+                  :action="quillUploaderUrl"
+                  name="file"
+                  :before-upload="quillBeforeUpload"
+                  :file-list="fileList"
+                  :show-file-list="false"
+                  :on-success="uploadSuccess"
+                  :on-error="uploadError"
+                  style="display:none"
+                  >
               </el-upload>
             </el-form-item>
           </div>
@@ -103,21 +152,21 @@
 <script>
 import moment from 'moment'
 
-//富文本组件工具栏
-const toolbarOptions = [
-  ['bold', 'italic', 'underline', 'strike'], // toggled buttons
-  [{'header': 1}, {'header': 2}], // custom button values
-  [{'list': 'ordered'}, {'list': 'bullet'}],
-  [{'indent': '-1'}, {'indent': '+1'}], // outdent/indent
-  [{'direction': 'rtl'}], // text direction
-  [{'size': ['small', false, 'large', 'huge']}], // custom dropdown
-  [{'header': [1, 2, 3, 4, 5, 6, false]}],
-  [{'color': []}, {'background': []}], // dropdown with defaults from theme
-  [{'font': []}],
-  [{'align': []}],
-  ['link', 'image'],
-  ['clean']
-]
+// //富文本组件工具栏
+// const toolbarOptions = [
+//   ['bold', 'italic', 'underline', 'strike'], // toggled buttons
+//   [{'header': 1}, {'header': 2}], // custom button values
+//   [{'list': 'ordered'}, {'list': 'bullet'}],
+//   [{'indent': '-1'}, {'indent': '+1'}], // outdent/indent
+//   [{'direction': 'rtl'}], // text direction
+//   [{'size': ['small', false, 'large', 'huge']}], // custom dropdown
+//   [{'header': [1, 2, 3, 4, 5, 6, false]}],
+//   [{'color': []}, {'background': []}], // dropdown with defaults from theme
+//   [{'font': []}],
+//   [{'align': []}],
+//   ['link', 'image'],
+//   ['clean']
+// ]
 
 export default {
   // components:{
@@ -125,31 +174,71 @@ export default {
   // },
   data() {
     return {
-      quillUpdateImg: false, // 根据图片上传状态来确定是否显示loading动画，刚开始是false,不显示
-      content: null,
-      editorOption: {
-        placeholder: '',
-        theme: 'snow', // or 'bubble'
-        modules: {
-          toolbar: {
-            container: toolbarOptions,
-            handlers: {
-            'image': function (value) {
-                if (value) {
-                  // 触发input框选择图片文件
-                  document.querySelector('.avatar-uploader input').click()
-                } else {
-                this.quill.format('image', false);
-                }
+      // quillUpdateImg: false, // 根据图片上传状态来确定是否显示loading动画，刚开始是false,不显示
+       content: null,
+      // fileList:[],//上传图片
+      // editorOption: {
+      //   placeholder: '',
+      //   theme: 'snow', // or 'bubble'
+      //   modules: {
+      //     toolbar: {
+      //       container: toolbarOptions,
+      //       handlers: {
+      //       'image': function (value) {
+      //           if (value) {
+      //             alert("11");
+      //             // 触发input框选择图片文件
+      //             document.querySelector('.avatar-uploader input').click()
+      //           } else {
+      //           this.quill.format('image', false);
+      //           }
+      //         }
+      //       },
+      //       quillUploaderUrl: `${this.$api.UploadFile}?source_id=` + this.articalid + `&source_item=Quill`, // 这里写你要上传的图片服务器地址
+      //       header: {
+      //         token: sessionStorage.token
+      //       } // 有的图片服务器要求请求头需要有token
+      //     }
+      //   }
+      // },
+      fileList:[],//上传图片
+       editorOption: {
+         placeholder: '',//
+          modules:{
+            toolbar: {
+              container: [
+                ['bold', 'italic', 'underline', 'strike'],    //加粗，斜体，下划线，删除线
+                ['blockquote', 'code-block'],     //引用，代码块
+                [{ 'header': 1 }, { 'header': 2 }],        // 标题，键值对的形式；1、2表示字体大小
+                [{ 'list': 'ordered'}, { 'list': 'bullet' }],     //列表
+                [{ 'script': 'sub'}, { 'script': 'super' }],   // 上下标
+                [{ 'indent': '-1'}, { 'indent': '+1' }],     // 缩进
+                [{ 'direction': 'rtl' }],             // 文本方向
+                [{ 'size': ['small', false, 'large', 'huge'] }], // 字体大小
+                [{ 'header': [1, 2, 3, 4, 5, 6, false] }],     //几级标题
+                [{ 'color': [] }, { 'background': [] }],     // 字体颜色，字体背景颜色
+                [{ 'font': [] }],     //字体
+                [{ 'align': [] }],    //对齐方式
+                ['clean'],    //清除字体样式
+                ['image','video']    //上传图片、上传视频
+              ],
+              handlers: {
+                  'image': function (value) {
+                      if (value) {
+                          // 触发input框选择图片文件
+                          document.querySelector('.avatar-uploader input').click()
+                      } else {
+                          this.quill.format('image', false);
+                      }
+                  }
               }
-            },
-            serverUrl: '/manager/common/imgUpload', // 这里写你要上传的图片服务器地址
-            header: {
-              token: sessionStorage.token
-            } // 有的图片服务器要求请求头需要有token
-          }
-        }
-      },
+            }
+        },
+        theme:'snow'
+       },
+
+
+
 
 
       showFlag : false,
@@ -165,9 +254,12 @@ export default {
       loading: false,
       dialogVisible: false,
       dialogTitle: "新增",
+      imgUploaderUrl:'',
+      quillUploaderUrl:'',
+      header:'',
+      //fileList:'',
+      articalid:'',
 
-      content: '',
-      editorOption: {} 
 
     }
 
@@ -176,7 +268,7 @@ export default {
   //   quillEditor
   // },
   mounted() {
-    //this.getInfo();
+    this.getInfo();
   },
   methods: {
     onEditorChange({editor, html, text}) {//内容改变事件
@@ -185,35 +277,55 @@ export default {
       console.log(html)
     },
     // 富文本图片上传前
-    beforeUpload() {
+    quillBeforeUpload(file) {
       // 显示loading动画
       this.quillUpdateImg = true
+
+      let formData = new FormData();
+      formData.append("file", file);
+
     },
+    // uploadSuccess(res, file) {
+    //   // res为图片服务器返回的数据
+    //   // 获取富文本组件实例
+    //   console.log(res);
+    //   let quill = this.$refs.myQuillEditor.quill
+    //   // 如果上传成功
+    //   if (res.code == 200 ) {
+    //   // 获取光标所在位置
+    //   let length = quill.getSelection().index;
+    //   // 插入图片 res.url为服务器返回的图片地址
+    //   quill.insertEmbed(length, 'image', res.url)
+    //   // 调整光标到最后
+    //   quill.setSelection(length + 1)
+    //   } else {
+    //   this.$message.error('图片插入失败')
+    //   }
+    //   // loading动画消失
+    //   this.quillUpdateImg = false
+    // },
     uploadSuccess(res, file) {
-      // res为图片服务器返回的数据
-      // 获取富文本组件实例
-      console.log(res);
-      let quill = this.$refs.myQuillEditor.quill
-      // 如果上传成功
-      if (res.code == 200 ) {
-      // 获取光标所在位置
-      let length = quill.getSelection().index;
-      // 插入图片 res.url为服务器返回的图片地址
-      quill.insertEmbed(length, 'image', res.url)
-      // 调整光标到最后
-      quill.setSelection(length + 1)
-      } else {
-      this.$message.error('图片插入失败')
-      }
-      // loading动画消失
-      this.quillUpdateImg = false
+    console.log(res)
+    console.log(file)
+        let img = res;  //需要后台配置文件服务器
+        let quill = this.$refs.myQuillEditor.quill
+        // 获取光标所在位置
+        let length = quill.getSelection().index;
+        // 插入图片  res.url为服务器返回的图片地址
+        quill.insertEmbed(length, 'image', img)
+        // 调整光标到最后
+        quill.setSelection(length + 1)
     },
-    // 富文本图片上传失败
+      // 富文本图片上传失败
     uploadError() {
-      // loading动画消失
-      this.quillUpdateImg = false
-      this.$message.error('图片插入失败')
+        this.$message.error('图片插入失败')
     },
+    // // 富文本图片上传失败
+    // uploadError() {
+    //   // loading动画消失
+    //   this.quillUpdateImg = false
+    //   this.$message.error('图片插入失败')
+    // },
 
 
     exportList() {
@@ -233,7 +345,12 @@ export default {
         this.currentPage = 1;
       }
       this.loading = true;
-      this.$http.post(`${this.$api.GetDrugArticalList}?title=${this.formInline.title}&keywords=${this.formInline.keywords}&page=${this.currentPage}&limit=${this.pagesize}&sort=+id`)
+      let data = { title: `${this.formInline.title}`, 
+      keywords: `${this.formInline.keywords}`, 
+      page: `${this.currentPage}`, 
+      limit: `${this.pagesize}`, 
+      sort: `+id` };
+      this.$http.post(`${this.$api.GetDrugArticalList}`, data)
       .then(res=> {
         this.tableData = res.data;
         this.loading = false;
@@ -248,9 +365,18 @@ export default {
     },
     handleClick(type) {
       //if (type == 'add') {
+        this.articalid = '';
         this.showFlag = false;
         this.dialogTitle = "新增";
         this.formInline2 = {};
+        //需要产生一个主键id
+        this.$http.post(`${this.$api.GetNewGuid}`)
+          .then(res=> {
+            this.articalid = res;
+            this.imgUploaderUrl = `${this.$api.UploadFile}?source_id=` + this.articalid + `&source_item=Artical`;
+            this.quillUploaderUrl = `${this.$api.UploadFile}?source_id=` + this.articalid + `&source_item=Quill`; // 这里写你要上传的图片服务器地址
+          })
+
         this.dialogVisible = true;
       //}
     },
@@ -292,6 +418,69 @@ export default {
         if(date == undefined){return ''};
         return moment(date).format("YYYY-MM-DD HH:MM:SS")
     },
+
+    //  //图片上传个数限制
+    // handleExceed(files, fileList) {
+    //   this.$message.warning(`请最多上传 ${this.form.limit} 张图片。`);
+    // },
+    //图片上传的验证
+    beforeUpload(file) {
+      var testmsg = /^image\/(jpeg|png|jpg|bmp)$/.test(file.type);
+      const isLt4M = file.size / 1024 / 1024 <= 4; //图片大小不超过2MB
+      if (!testmsg) {
+        this.$message.error("上传图片格式不对!");
+        this.$refs.upload.clearFiles();
+        return;
+      }
+      if (!isLt4M) {
+        this.$message.error("上传图片大小不能超过 4M!");
+        return;
+      }
+      return testmsg && isLt4M;
+
+      //const file = file.file; // 文件信息
+      let formData = new FormData();
+      formData.append("file", file);
+    },
+    handlePreview(file){
+    },
+    //删除上传了的图片
+    handleRemove(file) {
+      console.log(file, "delete");
+      let arrPic = this.$refs.upload.uploadFiles;
+      let index = arrPic.indexOf(file);
+      this.picList.splice(index, 1);
+      let num = 0;
+      arrPic.map((item) => {
+        if (item.uid == file.uid) {
+          arrPic.splice(num, 1);
+        }
+        num++;
+      });
+      console.log(arrPic, "arrpic");
+    },
+//     //图片上传
+//     httpRequest(e) {
+//       const file = e.file; // 文件信息
+//       const formData = new FormData();
+//       formData.append("file", file);
+//       // uploadFile(formData).then(
+//       //   (res) => {
+//       //     /*    console.log(res, "pic"); */
+//       //     this.picList.push(res.id);
+//       //   },
+//       //   (err) => {
+//       //     this.$refs.upload.clearFiles();  //上传失败后清除当前上传的图片
+//       //   }
+//       // );
+//     },
+//     //判断当前是否上传了图片，必须上传了图片才能通过验证
+//     handleChange1(res) {
+//       if (res) {
+//         this.isFile = true;
+//       }
+//     },
+    
   }
 }
 </script>
@@ -302,5 +491,9 @@ export default {
 <style>
 .ql-editor.ql-blank, .ql-editor {
 height: 350px;
+}
+
+.dvquill .el-form-item__content{
+width:80%;
 }
 </style>
