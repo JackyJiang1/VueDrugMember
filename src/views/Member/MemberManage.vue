@@ -72,6 +72,7 @@
           <div style="display:none;">
             <el-form-item label="Id">
               <el-input v-model="formInline2.id" :disabled="showFlag"></el-input>
+              <!-- <el-input v-model="formInline2.createdby" :disabled="showFlag"></el-input> -->
             </el-form-item>
           </div>
           <div>
@@ -129,6 +130,11 @@
               <el-input v-model="formInline2.reminder_action" :disabled="showFlag"></el-input>
             </el-form-item>
           </div>
+          <div>
+            <el-form-item label="当前积分">
+              <el-input v-model="formInline2.creditscore" :disabled="showFlag"></el-input>
+            </el-form-item>
+          </div>
         </el-form>
       </div>
       <div class="operater mb20 center">
@@ -159,6 +165,7 @@ export default {
       loading: false,
       dialogVisible: false,
       dialogTitle: "新增",
+      username:sessionStorage.getItem('username'),
     }
   },
   mounted() {
@@ -223,7 +230,7 @@ export default {
       } else if (type == 'delete') {
         this.$confirm('确定删除？','请确认')
         .then(_ => {
-          let data = { id: `${row.id}`};
+          let data = { memberid: `${row.id}`};
           this.$http.post(`${this.$api.DeleteDrugMember}`, data)
           .then(res=> {
             res.code == 0 ? this.$message.success(res.message) : this.$message.error(res.message)
@@ -254,21 +261,30 @@ export default {
         }
     },
     saveEdit() {
+      // if(this.dialogTitle == '新增'){
+      //   alert('新增');
+      //   this.formInline2.id = '';
+      // }
+      // this.formInline2.createdby = this.username;
+      // this.formInline2.createddate = '';
+      // this.formInline2.modifiedby = this.username;
+      // this.formInline2.modifieddate = '';
+      //1111
       console.log(this.formInline2)
       console.log(JSON.stringify(this.formInline2));
-      // let url = '';
-      // url = this.dialogTitle == '新增'? this.$api.AddDrugMember : this.$api.UpdateDrugMember;
-      // this.$http.post(url, this.formInline2)
-      // .then(res=> {
-      //   console.log(res);
-      //   res.code == '0' ? this.$message.success(res.message) : this.$message.error(res.message);
-      //   this.reset();
-      //   this.dialogVisible= false;
-      // })
-      // .catch(err=> {
-      //   console.log(err);
-      //   this.dialogVisible = false;
-      // })
+      let url = '';
+      url = this.dialogTitle == '新增'? this.$api.AddDrugMember : this.$api.UpdateDrugMember;
+      this.$http.post(url, this.formInline2)
+      .then(res=> {
+        console.log(res);
+        res.code == '0' ? this.$message.success(res.message) : this.$message.error(res.message);
+        this.reset();
+        this.dialogVisible= false;
+      })
+      .catch(err=> {
+        console.log(err);
+        this.dialogVisible = false;
+      })
     },
 
 
