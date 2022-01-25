@@ -57,7 +57,7 @@ export default {
       loading: false,
 	    focusIndex: -1,
 	    username: 'admin',
-	    password: '123456',
+	    password: 'dmd123!#',
 	    mobile: '',
       captcha: '',
       code: '',

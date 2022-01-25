@@ -32,6 +32,7 @@
       <el-table-column prop="mbname" label="店员姓名" width="120"></el-table-column>
       <el-table-column prop="wechat_no" label="微信" width="150"></el-table-column>
       <el-table-column prop="phone_no" label="电话" width="150"></el-table-column>
+      <el-table-column prop="status_act" label="认证状态" width="120"></el-table-column>
       <el-table-column prop="email" label="邮箱" width="200"></el-table-column>
       <el-table-column prop="addressstr" label="地址" width="200"></el-table-column>
       <el-table-column prop="jobtitle" label="类型" width="90"></el-table-column>
@@ -45,13 +46,14 @@
       <el-table-column prop="reminder_commu" label="话术提醒" width="150" :formatter="reminderFormat"></el-table-column>
       <el-table-column prop="reminder_action" label="活动提醒" width="150" :formatter="reminderFormat"></el-table-column>
       <el-table-column
-        width="270"
+        width="350"
         fixed="right"
         label="操作">
         <template slot-scope="scope">
-          <el-button type="success" size="mini" @click="handleClick1(scope.row,'show')"><i class="el-icon-tickets"></i>显示</el-button>
+          <el-button type="info" size="mini" @click="handleClick1(scope.row,'show')"><i class="el-icon-tickets"></i>显示</el-button>
           <el-button type="primary" size="mini" @click="handleClick1(scope.row,'edit')"><i class="el-icon-edit"></i>修改</el-button>
           <el-button type="danger" size="mini" @click="handleClick1(scope.row,'delete')"><i class="el-icon-delete"></i>删除</el-button>
+          <!-- <el-button type="success" size="mini" @click="handleClick1(scope.row,'active')"><i class="el-icon-circle-check"></i>认证</el-button> -->
           <!-- <el-button type="warning" size="mini" @click="handleClick(scope.row,'Attach')"><i class="el-icon-folder-add"></i>Attach</el-button> -->
         </template>
       </el-table-column>
@@ -234,15 +236,35 @@ export default {
           this.$http.post(`${this.$api.DeleteDrugMember}`, data)
           .then(res=> {
             res.code == 0 ? this.$message.success(res.message) : this.$message.error(res.message)
-            this.onSubmit();
+            this.getInfo();
           })
         })
         .catch(_ => {});
-      } else {
+      } else if (type == 'edit') {
         this.showFlag = false;
         this.dialogTitle = "修改";
         this.formInline2 = row;
         this.dialogVisible = true;
+      // } else if (type == 'active') {
+      //   let status_act = row.status_act;
+      //   if (status_act == "VALID"){
+      //     this.$confirm('确定认证该店员？','请确认')
+      //     .then(_ => {
+      //       this.formInline2 = row;
+      //       this.formInline2.status_act = 'ACTIVE';
+      //       //let data = { memberid: `${row.id}`};
+      //       this.$http.post(`${this.$api.UpdateDrugMember}`, this.formInline2)
+      //       .then(res=> {
+      //         res.code == 0 ? this.$message.success(res.message) : this.$message.error(res.message)
+      //         this.getInfo();
+      //       })
+      //     })
+      //     .catch(_ => {});
+        // }
+        // else {
+        //   this.$message({type: 'error', showClose: true, message: '只有VALID状态才可以激活！'})
+        // }
+
       }
     },
     dateFormat:function(row,column){

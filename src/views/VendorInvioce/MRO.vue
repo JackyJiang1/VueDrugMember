@@ -208,7 +208,6 @@
         <el-form-item label="created Date">
           <el-input v-model="formInline2.createddate"></el-input>
         </el-form-item>
-
       </el-form>
       <div class="operater mb20 clearfix">
         <el-button type="primary" size="mini" @click="save(2,formInline2)" class="fr">Save</el-button>

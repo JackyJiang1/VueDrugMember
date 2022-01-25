@@ -81,11 +81,74 @@ let routes = [
         }
       },
       {
+        path: '/开口说管理',
+        name: '开口说管理',
+        component: ()=>import('./views/Study/StudyManage'),
+        meta: {
+          title: '开口说管理',
+          noCache: true
+        }
+      },
+      {
+        path: '/开口说记录',
+        name: '开口说记录',
+        component: ()=>import('./views/Study/StudyRequestManage'),
+        meta: {
+          title: '开口说记录',
+          noCache: true
+        }
+      },
+      {
+        path: '/问卷管理',
+        name: '问卷管理',
+        component: ()=>import('./views/Question/QuestionManage'),
+        meta: {
+          title: '问卷管理',
+          noCache: true
+        }
+      },
+      // {
+      //   path: '/问卷记录',
+      //   name: '问卷记录',
+      //   component: ()=>import('./views/Question/QuestionRequestManage'),
+      //   meta: {
+      //     title: '问卷记录',
+      //     noCache: true
+      //   }
+      // },
+      {
         path: '/资讯管理',
         name: '资讯管理',
         component: ()=>import('./views/Artical/ArticalManage'),
         meta: {
-          title: '活动管理',
+          title: '资讯管理',
+          noCache: true
+        }
+      },
+      {
+        path: '/积分商城',
+        name: '积分商城',
+        component: ()=>import('./views/Score/ScoreMallManage'),
+        meta: {
+          title: '积分商城',
+          noCache: true
+        }
+      },
+      {
+        path: '/积分申请',
+        name: '积分申请',
+        component: ()=>import('./views/Score/ScoreRequestManage'),
+        meta: {
+          title: '积分申请',
+          noCache: true
+        }
+      },
+      {
+        path: '/商品兑换申请',
+        name: '商品兑换申请',
+        component: ()=>import('./views/Score/ScoreGiftRequestManage'),
+        meta: {
+          title: '商品兑换申请',
           noCache: true
         }
       },
